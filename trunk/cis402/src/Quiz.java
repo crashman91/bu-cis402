@@ -75,37 +75,37 @@ public class Quiz {
 	private static Question[] initializeQuestions() {
 		Question questions[] = new Question[6];
 
-		questions[0] = new Question("In photography, filters are used to:");
+		questions[0] = new Question("1. In photography, filters are used to:");
 		questions[0].addAnswer(new Answer("keep dirt and grime away from the film surface "));
 		questions[0].addAnswer(new Answer("modify light.", true));
 		questions[0].addAnswer(new Answer("keep used photons from collecting inside the camera."));
 		questions[0].addAnswer(new Answer("clean the air entering the camera through the PC terminal."));
 
-		questions[1] = new Question("Depth of  field refers to:");
+		questions[1] = new Question("2. Depth of  field refers to:");
 		questions[1].addAnswer(new Answer("the thickness of the film."));
 		questions[1].addAnswer(new Answer("the distance from the rear nodal point of the lens and the film plane."));
 		questions[1].addAnswer(new Answer("landscape photographs made with a wide angle lens."));
 		questions[1].addAnswer(new Answer("the areas behind and in front of the point of focus that are also acceptably sharp.", true));
 
-		questions[2] = new Question("An over-exposed slide will:");
+		questions[2] = new Question("3. An over-exposed slide will:");
 		questions[2].addAnswer(new Answer("be too light.", true));
 		questions[2].addAnswer(new Answer("be too dark."));
 		questions[2].addAnswer(new Answer("be orange colored."));
 		questions[2].addAnswer(new Answer("have a pronounced blue cast."));
 
-		questions[3] = new Question("A zoom lens:");
+		questions[3] = new Question("4. A zoom lens:");
 		questions[3].addAnswer(new Answer("is faster than a regular lens."));
 		questions[3].addAnswer(new Answer("is usually sharper than a non-zoom lens."));
 		questions[3].addAnswer(new Answer("has a variable focal length.", true));
 		questions[3].addAnswer(new Answer("should never be used with a filter."));
 
-		questions[4] = new Question("Compared to a film with an ISO of 400, a film with an ISO of 100:");
+		questions[4] = new Question("5. Compared to a film with an ISO of 400, a film with an ISO of 100:");
 		questions[4].addAnswer(new Answer("requires less exposure."));
 		questions[4].addAnswer(new Answer("is better for action subjects."));
 		questions[4].addAnswer(new Answer("will produce grainer prints."));
 		questions[4].addAnswer(new Answer("requires more exposure.", true));
 
-		questions[5] = new Question("Which of the following are especially suitable for use in low-light photography?");
+		questions[5] = new Question("6. Which of the following are especially suitable for use in low-light photography?");
 		questions[5].addAnswer(new Answer("slow film (low ISO rating)"));
 		questions[5].addAnswer(new Answer("fast shutter speed."));
 		questions[5].addAnswer(new Answer("wide aperture.", true));
