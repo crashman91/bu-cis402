@@ -29,14 +29,15 @@ public class Quiz2 {
 
 		for (int i = 0; i < questions.length; i++) {
 
-			// display the question text
-			System.out.println(questions[i].getQuestionText());
-
-			// display the available answers for the question
-			questions[i].printAnswers();
-
 			boolean correctAnswer = false;
 			do {
+
+				// display the question text
+				System.out.println(questions[i].getQuestionText());
+
+				// display the available answers for the question
+				questions[i].printAnswers();
+
 				userInput = new Scanner(System.in);
 				try {
 					option = userInput.nextInt();
@@ -51,7 +52,7 @@ public class Quiz2 {
 					System.out.println("Congratulations! That was the correct answer. \n");
 					correctAnswer = true;
 				} else {
-					System.out.println("Wrong answer. Try again.");
+					System.out.println("Wrong answer. Try again.\n");
 				}
 			} while (!correctAnswer);
 		}
@@ -66,37 +67,37 @@ public class Quiz2 {
 	private static Question2[] initializeQuestions() {
 		Question2 questions[] = new Question2[6];
 
-		questions[0] = new Question2("In photography, filters are used to:");
+		questions[0] = new Question2("1. In photography, filters are used to:");
 		questions[0].addAnswer(new Answer2("keep dirt and grime away from the film surface "));
 		questions[0].addAnswer(new Answer2("modify light.", true));
 		questions[0].addAnswer(new Answer2("keep used photons from collecting inside the camera."));
 		questions[0].addAnswer(new Answer2("clean the air entering the camera through the PC terminal."));
 
-		questions[1] = new Question2("Depth of  field refers to:");
+		questions[1] = new Question2("2. Depth of  field refers to:");
 		questions[1].addAnswer(new Answer2("the thickness of the film."));
 		questions[1].addAnswer(new Answer2("the distance from the rear nodal point of the lens and the film plane."));
 		questions[1].addAnswer(new Answer2("landscape photographs made with a wide angle lens."));
 		questions[1].addAnswer(new Answer2("the areas behind and in front of the point of focus that are also acceptably sharp.", true));
 
-		questions[2] = new Question2("An over-exposed slide will:");
+		questions[2] = new Question2("3. An over-exposed slide will:");
 		questions[2].addAnswer(new Answer2("be too light.", true));
 		questions[2].addAnswer(new Answer2("be too dark."));
 		questions[2].addAnswer(new Answer2("be orange colored."));
 		questions[2].addAnswer(new Answer2("have a pronounced blue cast."));
 
-		questions[3] = new Question2("A zoom lens:");
+		questions[3] = new Question2("4. A zoom lens:");
 		questions[3].addAnswer(new Answer2("is faster than a regular lens."));
 		questions[3].addAnswer(new Answer2("is usually sharper than a non-zoom lens."));
 		questions[3].addAnswer(new Answer2("has a variable focal length.", true));
 		questions[3].addAnswer(new Answer2("should never be used with a filter."));
 
-		questions[4] = new Question2("Compared to a film with an ISO of 400, a film with an ISO of 100:");
+		questions[4] = new Question2("5. Compared to a film with an ISO of 400, a film with an ISO of 100:");
 		questions[4].addAnswer(new Answer2("requires less exposure."));
 		questions[4].addAnswer(new Answer2("is better for action subjects."));
 		questions[4].addAnswer(new Answer2("will produce grainer prints."));
 		questions[4].addAnswer(new Answer2("requires more exposure.", true));
 
-		questions[5] = new Question2("Which of the following are especially suitable for use in low-light photography?");
+		questions[5] = new Question2("6. Which of the following are especially suitable for use in low-light photography?");
 		questions[5].addAnswer(new Answer2("slow film (low ISO rating)"));
 		questions[5].addAnswer(new Answer2("fast shutter speed."));
 		questions[5].addAnswer(new Answer2("wide aperture.", true));
